@@ -6,24 +6,33 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private Rigidbody2D _rigidbody2D;
-    private Vector2  _movementInput;
+    private Rigidbody2D rigidbody2D;
+    private Vector2  movementInput;
+    public float speed;
+    private Vector2 smoothedMovementInput;
+    private Vector2 movementInputSmoothVelocity;
+    public float movesmooth;
 
     // Start is called before the first frame update
     private void Awake()
     {
-        _rigidbody = GetComponents<Rigidbody2D>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        GetComponent<Rigidbody2D>().velocity = _movementInput;
+        smoothedMovementInput = Vector2.SmoothDamp(
+            smoothedMovementInput,
+            movementInput,
+            ref movementInputSmoothVelocity,
+            movesmooth);
+        GetComponent<Rigidbody2D>().velocity = smoothedMovementInput * speed;
     }
 
     private void OnMove(InputValue inputValue)
     {
-        _movementInput = inputValue.Get<Vector2>();
+        movementInput = inputValue.Get<Vector2>();
 
     }
 }
