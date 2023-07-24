@@ -23,6 +23,7 @@ public class EnemyMovement : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateTargetDirection();
+        Debug.Log("Direction to player: " + targetDirection);
         SetVelocity();
     }
 
@@ -46,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            rigidbody2D.velocity = transform.up * speed;
+            rigidbody2D.velocity = targetDirection * speed;
         }
     }
 }

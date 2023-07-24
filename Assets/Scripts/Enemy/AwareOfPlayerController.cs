@@ -21,7 +21,7 @@ public class AwareOfPlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector2 enemytoPlayerVector = player.position - transform.position;
         Directiontoplayer = enemytoPlayerVector.normalized;
