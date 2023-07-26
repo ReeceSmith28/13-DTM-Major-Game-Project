@@ -26,7 +26,7 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             fireBullet();
         }

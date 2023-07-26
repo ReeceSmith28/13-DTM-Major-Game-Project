@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class Bullet1 : MonoBehaviour
 {
-    [SerializeField]
-    private float lifeTime;
-
+    public float bulletLifeTime;
     private void Start()
     {
-        lifeTime = 20f;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<EnemyMovement>())
         {
             Destroy(collision.gameObject);
-            Destroy(gameObject, lifeTime);
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject, bulletLifeTime);
         }
     }
 
