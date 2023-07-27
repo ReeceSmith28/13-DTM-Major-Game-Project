@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Bullet1 : MonoBehaviour
 {
-    public float bulletLifeTime;
     private void Start()
     {
     }
@@ -15,9 +14,9 @@ public class Bullet1 : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
-        else
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
-            Destroy(gameObject, bulletLifeTime);
+            Destroy(gameObject);
         }
     }
 

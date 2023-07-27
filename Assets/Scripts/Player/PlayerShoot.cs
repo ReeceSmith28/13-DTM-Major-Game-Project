@@ -26,9 +26,11 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        lastFireTime -= Time.deltaTime;
+        if (Input.GetMouseButton(0)&& lastFireTime <= 0)
         {
             fireBullet();
+            lastFireTime = timeBetweenShots ;
         }
 
     }
