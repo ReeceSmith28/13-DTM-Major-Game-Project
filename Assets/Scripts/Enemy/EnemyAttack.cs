@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private float damageAmount;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]
+    private float timeBetweenAttacks;
+    
+    private float lastTimeDamage;
+
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        
+        lastTimeDamage -= Time.deltaTime;
+        if (collision.gameObject.GetComponent<PlayerMovement>()&& lastTimeDamage <= 0)
+        {
+            var HealthController = collision.gameObject.GetComponent<HealthController>();
+
+            HealthController.TakeDamage(damageAmount);
+
+            lastTimeDamage = timeBetweenAttacks;
+        }
     }
 }
