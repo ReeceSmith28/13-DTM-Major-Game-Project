@@ -26,7 +26,14 @@ public class HealthController : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         if (currentHealth == 0)
+        {
             return;
+        }
+        
+        if (isInvincible)
+        {
+            return;
+        }
 
 
         currentHealth -= damageAmount;
