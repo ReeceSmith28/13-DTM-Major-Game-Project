@@ -23,6 +23,8 @@ public class HealthController : MonoBehaviour
 
     public UnityEvent OnDied;
 
+    public UnityEvent OnDamaged;
+
     public void TakeDamage(float damageAmount)
     {
         if (currentHealth == 0)
@@ -44,6 +46,10 @@ public class HealthController : MonoBehaviour
         if (currentHealth == 0)
         {
             OnDied.Invoke();
+        }
+        else
+        {
+            OnDamaged.Invoke();
         }
 
     }
