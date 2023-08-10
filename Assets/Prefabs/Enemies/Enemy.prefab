@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f302625734dbbf439dfae6a6a36f907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 3
 --- !u!114 &8371421408230723161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9983e1a7c121b144919d2396928283e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Playerawarenessdistnce: 15
+  Playerawarenessdistnce: 200
 --- !u!58 &2581345447868649676
 CircleCollider2D:
   m_ObjectHideFlags: 0
