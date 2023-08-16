@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 794461180970161268}
   - component: {fileID: 6212632955822717870}
+  - component: {fileID: 2066147394000181598}
+  - component: {fileID: 4200830907819756746}
   m_Layer: 0
   m_Name: Health
   m_TagString: HealthPot
@@ -84,3 +86,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &2066147394000181598
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728822589755278604}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.07
+--- !u!114 &4200830907819756746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5728822589755278604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afec904d669743c45843dfe7189d8f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amounttoAdd: 50
