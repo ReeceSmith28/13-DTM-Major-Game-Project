@@ -10,6 +10,7 @@ public class CrossHair : MonoBehaviour
     void Start()
     {
         Cursor.visible = false;
+
     }
 
     // Update is called once per frame
@@ -18,5 +19,6 @@ public class CrossHair : MonoBehaviour
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
         transform.position = mousePosition;
+
     }
 }
