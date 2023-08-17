@@ -44,10 +44,8 @@ public class PlayerShoot : MonoBehaviour
         rigidbody2D.velocity = bulletSpeed * pointerTransform.right;
     }
 
-    //private void OnFire(InputValue inputvalue)
-    //{
-    //    fireContinue = inputvalue.isPressed;
-    
-    
-    //}
+    public void FireRateIncrease(float fireRateAdd)
+    {
+        timeBetweenShots -= fireRateAdd;
+    }
 }

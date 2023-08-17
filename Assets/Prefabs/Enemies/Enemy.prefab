@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8371421408230723161}
   - component: {fileID: 2581345447868649676}
   - component: {fileID: 5116729385142756812}
+  - component: {fileID: -36587427250136581}
+  - component: {fileID: 5807039670319773298}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -166,3 +168,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   timeBetweenAttacks: 1
+--- !u!114 &-36587427250136581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371421408230723109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0b603df80c3294daec618d4854b05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  lootBag: {fileID: 5807039670319773298}
+--- !u!114 &5807039670319773298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371421408230723109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1985f46ed614f4d41917e3e6580ecf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropppedItemPrefabs:
+  - {fileID: 3543024426222192130, guid: 69ac40a760c4ca449b369658618f0f6f, type: 3}
+  - {fileID: 3305666940970754605, guid: fcf8e91701d01a248bed35722e73375c, type: 3}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPot : MonoBehaviour
+public class FireRate : MonoBehaviour
 {
     [SerializeField]
     private float amounttoAdd;
@@ -11,9 +11,9 @@ public class HealthPot : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PlayerMovement>())
         {
-            var HealthController = other.gameObject.GetComponent<HealthController>();
+            var PlayerShoot = other.gameObject.GetComponent<PlayerShoot>();
 
-            HealthController.AddHealth(amounttoAdd);
+            PlayerShoot.FireRateIncrease(amounttoAdd);
 
             Destroy(gameObject);
         }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bullet1 : MonoBehaviour
 {
+
+    [SerializeField]
+    private int bulletDamage;
     private void Start()
     {
     }
@@ -11,7 +14,8 @@ public class Bullet1 : MonoBehaviour
     {
         if (collision.GetComponent<EnemyMovement>())
         {
-            Destroy(collision.gameObject);
+            var EnemyHealth = collision.gameObject.GetComponent <EnemyHealth>();
+            EnemyHealth.TakeDamage(bulletDamage);
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("Obstacle"))
