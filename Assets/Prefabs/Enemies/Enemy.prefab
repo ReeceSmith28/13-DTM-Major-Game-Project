@@ -197,3 +197,4 @@ MonoBehaviour:
   dropppedItemPrefabs:
   - {fileID: 3543024426222192130, guid: 69ac40a760c4ca449b369658618f0f6f, type: 3}
   - {fileID: 3305666940970754605, guid: fcf8e91701d01a248bed35722e73375c, type: 3}
+  - {fileID: 331406281327817920, guid: 8b2ab012126636349b49cd125297f41b, type: 3}

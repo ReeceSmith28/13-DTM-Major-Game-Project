@@ -34,4 +34,9 @@ public class PlayerMovement : MonoBehaviour
         movementInput = inputValue.Get<Vector2>();
 
     }
+
+    public void MoveIncrease(float moveAdd)
+    {
+        speed += moveAdd;
+    }
 }
