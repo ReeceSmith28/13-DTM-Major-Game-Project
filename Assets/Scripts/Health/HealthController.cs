@@ -75,4 +75,10 @@ public class HealthController : MonoBehaviour
         }
     }
 
+    public void IncreaseMaxHealth(float addAmount)
+    {
+        maximumHealth += addAmount;
+    }
+
+
 }
