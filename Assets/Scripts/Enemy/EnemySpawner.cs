@@ -6,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject slimePrefab;
+    private GameObject[] enemyPrefabs;
 
     [SerializeField]
     private float minimumSpawnTime;
@@ -21,6 +21,22 @@ public class EnemySpawner : MonoBehaviour
         SetTimeUntilSpawn();
     }
 
+    private GameObject ChooseEnemy()
+    {
+        if (enemyPrefabs.Length > 0)
+        {
+            int randomIndex = Random.Range(0, enemyPrefabs.Length);
+            GameObject selectedPrafab = enemyPrefabs[randomIndex];
+            return selectedPrafab;
+        }
+        else
+        {
+            Debug.Log("No Loot Dropped");
+            return null;
+        }
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -28,7 +44,9 @@ public class EnemySpawner : MonoBehaviour
 
         if (timeUntilSpawn <= 0)
         {
-            Instantiate(slimePrefab, transform.position, Quaternion.identity);
+            ChooseEnemy();
+            GameObject chosenPrefab = ChooseEnemy();
+            Instantiate(chosenPrefab, transform.position, Quaternion.identity);
             SetTimeUntilSpawn();
         }
 

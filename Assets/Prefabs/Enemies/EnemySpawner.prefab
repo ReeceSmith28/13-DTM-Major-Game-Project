@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb867ca70f4d434595b005d0587aa57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slimePrefab: {fileID: 8371421408230723109, guid: eb69c4781a1df2242b022756072f6663, type: 3}
+  enemyPrefabs:
+  - {fileID: 8371421408230723109, guid: eb69c4781a1df2242b022756072f6663, type: 3}
+  - {fileID: 4026850064019440207, guid: 0993db294e83df744a02cfef5a3abfc6, type: 3}
   minimumSpawnTime: 4
   maximumSpawnTime: 10

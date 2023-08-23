@@ -11,11 +11,17 @@ public class EnemyHealth : MonoBehaviour
 
     public LootBag lootBag;
 
+    public GameObject waveCounter;
+
     private void Start()
     {
         currentHealth = maxHealth;
+        //int waveEnd = waveCounter.remainingEnemies;
     }
 
+    public void Update()
+    {
+    }
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
@@ -37,6 +43,10 @@ public class EnemyHealth : MonoBehaviour
             }
             
         }
+
+        //var wavecounter = gameObject.GetComponent<WaveCounter>();
+        //wavecounter.WaveDecrease(1);
+
         Destroy(gameObject);
     }
 
