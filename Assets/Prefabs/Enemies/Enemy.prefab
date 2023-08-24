@@ -182,6 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   lootBag: {fileID: 5807039670319773298}
+  waveCounter: {fileID: 0}
+  waveEnd: 0
 --- !u!114 &5807039670319773298
 MonoBehaviour:
   m_ObjectHideFlags: 0

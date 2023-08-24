@@ -13,14 +13,12 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject waveCounter;
 
+    public int waveEnd;
+
     private void Start()
     {
         currentHealth = maxHealth;
-        //int waveEnd = waveCounter.remainingEnemies;
-    }
-
-    public void Update()
-    {
+        
     }
     public void TakeDamage(int damageAmount)
     {
@@ -43,9 +41,8 @@ public class EnemyHealth : MonoBehaviour
             }
             
         }
-
-        //var wavecounter = gameObject.GetComponent<WaveCounter>();
-        //wavecounter.WaveDecrease(1);
+        waveCounter = GameObject.FindGameObjectWithTag("WaveCounter");
+        waveCounter.GetComponent<WaveCounter>().WaveDecrease(1);
 
         Destroy(gameObject);
     }
