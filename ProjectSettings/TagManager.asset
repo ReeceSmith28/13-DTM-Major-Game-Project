@@ -7,6 +7,8 @@ TagManager:
   - GunOffset
   - Obstacle
   - HealthPot
+  - Enemy
+  - enemyGunOffset
   layers:
   - Default
   - TransparentFX

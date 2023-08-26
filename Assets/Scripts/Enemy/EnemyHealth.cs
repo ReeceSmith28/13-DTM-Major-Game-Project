@@ -41,8 +41,8 @@ public class EnemyHealth : MonoBehaviour
             }
             
         }
-        waveCounter = GameObject.FindGameObjectWithTag("WaveCounter");
-        waveCounter.GetComponent<WaveCounter>().WaveDecrease(1);
+        //waveCounter = GameObject.FindGameObjectWithTag("WaveCounter");
+        //waveCounter.GetComponent<WaveCounter>().WaveDecrease(1);
 
         Destroy(gameObject);
     }
