@@ -47,7 +47,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else
         {
-            rigidbody2D.velocity = targetDirection * speed;
+            rigidbody2D.velocity = targetDirection  * speed;
         }
     }
 }
