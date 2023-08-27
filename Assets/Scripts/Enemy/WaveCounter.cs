@@ -5,35 +5,25 @@ using UnityEngine.Events;
 
 public class WaveCounter : MonoBehaviour
 {
-    public int remainingEnemies;
-    public UnityEvent waveComplete;
-    public GameObject[] Enemy;
+    public float timeRemaining;
+    public UnityEvent startBoss;
 
     private void Start()
     {
     }
 
-    public void WaveDecrease(int enemiesKilled)
+    public void Update()
     {
-        remainingEnemies -= enemiesKilled;
-
-        if (remainingEnemies == 0)
+        timeRemaining -= Time.deltaTime;
+        if (timeRemaining <= 0)
         {
-            waveComplete.Invoke();
-            Enemy = GameObject.FindGameObjectsWithTag("Enemy");
-            foreach (var enemyObject in Enemy)
-            {
-                enemyObject.GetComponent<EnemyHealth>().Die();
-            }
-
+            StartBossFight();
         }
-        if (remainingEnemies < 0)
-        {
-            remainingEnemies = 0;
-        }
-
     }
 
-
+    public void StartBossFight()
+    {
+        startBoss.Invoke();
+    }
 
 }

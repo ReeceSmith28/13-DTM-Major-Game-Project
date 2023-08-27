@@ -138,4 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletDamage: 10
   player: {fileID: 0}
-  speed: 20
+  speed: 2

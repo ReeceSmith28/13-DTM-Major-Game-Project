@@ -44,10 +44,7 @@ public class EnemySpawner : MonoBehaviour
 
         if (timeUntilSpawn <= 0)
         {
-            ChooseEnemy();
-            GameObject chosenPrefab = ChooseEnemy();
-            Instantiate(chosenPrefab, transform.position, Quaternion.identity);
-            SetTimeUntilSpawn();
+            Spawn();
         }
 
     }
@@ -55,6 +52,14 @@ public class EnemySpawner : MonoBehaviour
     private void SetTimeUntilSpawn()
     {
         timeUntilSpawn = Random.Range(minimumSpawnTime, maximumSpawnTime);
+    }
+
+    public void Spawn()
+    {
+        ChooseEnemy();
+        GameObject chosenPrefab = ChooseEnemy();
+        Instantiate(chosenPrefab, transform.position, Quaternion.identity);
+        SetTimeUntilSpawn();
     }
 
 }

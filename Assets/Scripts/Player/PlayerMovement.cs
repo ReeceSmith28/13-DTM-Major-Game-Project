@@ -12,10 +12,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 smoothedMovementInput;
     private Vector2 movementInputSmoothVelocity;
     public float movesmooth;
+    private Animator animator;
 
     // Start is called before the first frame update
     private void Awake()
     {
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
             ref movementInputSmoothVelocity,
             movesmooth);
         GetComponent<Rigidbody2D>().velocity = smoothedMovementInput * speed;
+        SetAnimation();  
     }
 
     private void OnMove(InputValue inputValue)
@@ -38,5 +41,12 @@ public class PlayerMovement : MonoBehaviour
     public void MoveIncrease(float moveAdd)
     {
         speed += moveAdd;
+    }
+
+    private void SetAnimation()
+    {
+        bool isMoving = movementInput != Vector2.zero;
+        animator.SetBool("isMoving", isMoving);
+        
     }
 }
