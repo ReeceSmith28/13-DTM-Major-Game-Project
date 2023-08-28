@@ -102,12 +102,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3547757298631166233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,4 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccccb02de525d2746814c62b272dc6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletDamage: 70
+  bulletDamage: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e8ba51a53eaf7ec47a30e55f5135e887
+guid: f75db6eeeec94ac4e863689ac68a74fa
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -81,7 +81,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 0
+    fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
@@ -93,7 +93,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638288143686481485
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -117,18 +117,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Chem-hands-Sheet
+  - name: maxHealthUp
     originalName: 
-    pivot: {x: 0.4740484, y: -1.2142857}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 289
-      height: 14
-    spriteID: 9e52b8ff4c1f56a4e8876932450bc33b
+      width: 49
+      height: 32
+    spriteID: ef51954af5b43d449bb9e1f2891fdf81
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -136,120 +136,27 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -51, y: -13}
-  spriteSheetImportData:
-  - name: Chem-hands-Sheet_0
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 33
-      height: 12
-    spriteID: 1e58c010cdc4fac4a8512313df7d43de
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Chem-hands-Sheet_1
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 132
-      y: 5
-      width: 33
-      height: 12
-    spriteID: 947403aa748adf949a5ccf6253b3f84f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Chem-hands-Sheet_2
-    originalName: 
-    pivot: {x: 0, y: 0.5}
-    alignment: 4
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 260
-      y: 6
-      width: 33
-      height: 12
-    spriteID: 5a462fcf4a3b54d47834097a0237414e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
+    uvTransform: {x: 4, y: 4}
+  spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1153662778
-    name: Chem-hands-Sheet
+    guid: -1876320679
+    name: maxHealthUp
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Chem-hands-Sheet
+    - name: maxHealthUp
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 384
-        height: 128
-      spriteId: 9e52b8ff4c1f56a4e8876932450bc33b
+        x: 40
+        y: 64
+        width: 49
+        height: 32
+      spriteId: ef51954af5b43d449bb9e1f2891fdf81
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 384, y: 128}
+  canvasSize: {x: 128, y: 128}

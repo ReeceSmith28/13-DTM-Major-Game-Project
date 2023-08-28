@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Boss : MonoBehaviour
+public class projectileEnemyMovement : MonoBehaviour
 {
-
-    public int Health;
     private Rigidbody2D rigidBody;
     private Vector2 distanceToPlayer;
     private Vector2 directionToPlayer;
     private Transform player;
     public int stoppingDistance;
-    public GameObject bossProjectile;
+    public GameObject enemyProjectile;
     public int projectileSpeed;
     private float lastFireTime;
     public float timeBetweenShots;
@@ -42,36 +39,20 @@ public class Boss : MonoBehaviour
                 Shoot();
                 lastFireTime = timeBetweenShots;
             }
-            
+
         }
         else
         {
             rigidBody.velocity = speed * directionToPlayer;
         }
-        
-        
+
+
     }
 
     public void Shoot()
     {
-        GameObject bullet = Instantiate(bossProjectile, transform.position, Quaternion.identity);
+        GameObject bullet = Instantiate(enemyProjectile, transform.position, Quaternion.identity);
         Rigidbody2D rigidbody2D = bullet.GetComponent<Rigidbody2D>();
         rigidbody2D.velocity = projectileSpeed * directionToPlayer;
-    }
-
-    public void TakeDamage(int damageAmount)
-    {
-        Health -= damageAmount;
-        if (Health <= 0)
-        {
-            Die();
-        }
-    }
-
-    public void Die()
-    {
-        Destroy(gameObject);
-        SceneManager.LoadScene(3);
-        Cursor.visible = true;
     }
 }

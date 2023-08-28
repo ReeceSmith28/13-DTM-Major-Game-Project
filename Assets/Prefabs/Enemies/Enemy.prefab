@@ -80,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1841756380330682732, guid: b7d9e4008b017354cb45cd07d40e344f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 8771603844042654613, guid: 5804e33f71fb78f439827927e8b2941f, type: 3}
+  m_Color: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -153,7 +153,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!114 &5116729385142756812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,8 +182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   lootBag: {fileID: 5807039670319773298}
-  waveCounter: {fileID: 0}
-  waveEnd: 0
 --- !u!114 &5807039670319773298
 MonoBehaviour:
   m_ObjectHideFlags: 0

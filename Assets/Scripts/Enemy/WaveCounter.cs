@@ -15,7 +15,11 @@ public class WaveCounter : MonoBehaviour
     public void Update()
     {
         timeRemaining -= Time.deltaTime;
-        if (timeRemaining <= 0)
+        if (timeRemaining <=0)
+        {
+            timeRemaining = timeRemaining = 0;
+        }
+        if (timeRemaining == 0)
         {
             StartBossFight();
         }

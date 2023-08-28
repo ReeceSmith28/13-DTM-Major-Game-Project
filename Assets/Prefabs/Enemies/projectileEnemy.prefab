@@ -11,12 +11,10 @@ GameObject:
   - component: {fileID: 1020309225710866152}
   - component: {fileID: 1020309225710866153}
   - component: {fileID: 1020309225710866070}
-  - component: {fileID: 1020309225710866154}
-  - component: {fileID: 1020309225710866155}
   - component: {fileID: 6473738360861347966}
   - component: {fileID: 395082370971015497}
   - component: {fileID: 3067832533191194304}
-  - component: {fileID: 6244724369448311900}
+  - component: {fileID: 3375062374149660553}
   m_Layer: 0
   m_Name: projectileEnemy
   m_TagString: Untagged
@@ -113,32 +111,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &1020309225710866154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020309225710866071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f302625734dbbf439dfae6a6a36f907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
---- !u!114 &1020309225710866155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020309225710866071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9983e1a7c121b144919d2396928283e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Playerawarenessdistnce: 200
 --- !u!58 &6473738360861347966
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,7 +126,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.2
 --- !u!114 &395082370971015497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +141,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   lootBag: {fileID: 3067832533191194304}
-  waveCounter: {fileID: 0}
-  waveEnd: 0
 --- !u!114 &3067832533191194304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,7 +158,7 @@ MonoBehaviour:
   - {fileID: 3305666940970754605, guid: fcf8e91701d01a248bed35722e73375c, type: 3}
   - {fileID: 331406281327817920, guid: 8b2ab012126636349b49cd125297f41b, type: 3}
   - {fileID: 7916115729359684988, guid: 035a658c2f5f5a64d8286841d1337e10, type: 3}
---- !u!114 &6244724369448311900
+--- !u!114 &3375062374149660553
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,13 +167,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020309225710866071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a73d449ad21eb4095d632630aade41, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c5feacc6c2f61d4c8644d9750e0880d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stoppingDistance: 12
   enemyProjectile: {fileID: 1541993867876166659, guid: d2a8a50f3a64a9849b4e8bd97cffaf3d, type: 3}
-  timeBetweenShots: 5
-  lastFireTime: 0
-  projectileSpeed: 20
+  projectileSpeed: 10
+  timeBetweenShots: 3
+  speed: 3
 --- !u!1 &4513603967720062052
 GameObject:
   m_ObjectHideFlags: 0

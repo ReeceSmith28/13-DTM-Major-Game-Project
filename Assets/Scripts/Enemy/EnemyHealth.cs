@@ -10,11 +10,6 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
 
     public LootBag lootBag;
-
-    public GameObject waveCounter;
-
-    public int waveEnd;
-
     private void Start()
     {
         currentHealth = maxHealth;
@@ -41,8 +36,6 @@ public class EnemyHealth : MonoBehaviour
             }
             
         }
-        //waveCounter = GameObject.FindGameObjectWithTag("WaveCounter");
-        //waveCounter.GetComponent<WaveCounter>().WaveDecrease(1);
 
         Destroy(gameObject);
     }

@@ -18,6 +18,18 @@ public class Bullet1 : MonoBehaviour
             EnemyHealth.TakeDamage(bulletDamage);
             Destroy(gameObject);
         }
+        if (collision.GetComponent<projectileEnemyMovement>())
+        {
+            var EnemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            EnemyHealth.TakeDamage(bulletDamage);
+            Destroy(gameObject);
+        }
+        if (collision.GetComponent<Boss>())
+        {
+            var Boss = collision.gameObject.GetComponent<Boss>();
+            Boss.TakeDamage(bulletDamage);
+            Destroy(gameObject);
+        }
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);

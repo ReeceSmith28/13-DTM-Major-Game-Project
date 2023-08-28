@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
@@ -50,6 +51,8 @@ public class HealthController : MonoBehaviour
         if (currentHealth == 0)
         {
             OnDied.Invoke();
+            SceneManager.LoadScene(2);
+            Cursor.visible = true;
         }
         else
         {
