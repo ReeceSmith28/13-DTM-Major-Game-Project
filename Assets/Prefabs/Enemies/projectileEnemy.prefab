@@ -173,8 +173,8 @@ MonoBehaviour:
   stoppingDistance: 12
   enemyProjectile: {fileID: 1541993867876166659, guid: d2a8a50f3a64a9849b4e8bd97cffaf3d, type: 3}
   projectileSpeed: 10
-  timeBetweenShots: 3
-  speed: 3
+  timeBetweenShots: 1.5
+  speed: 6
 --- !u!1 &4513603967720062052
 GameObject:
   m_ObjectHideFlags: 0

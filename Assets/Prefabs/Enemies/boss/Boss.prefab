@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 1000
-  stoppingDistance: 15
+  stoppingDistance: 18
   bossProjectile: {fileID: 8578462091621970187, guid: 38c8f4e440deea34c8e6a3ca52b1b3c4, type: 3}
-  projectileSpeed: 10
-  timeBetweenShots: 5
+  projectileSpeed: 7
+  timeBetweenShots: 2.5
   speed: 5
