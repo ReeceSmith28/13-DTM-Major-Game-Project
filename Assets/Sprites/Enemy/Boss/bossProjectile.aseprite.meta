@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8e4f4ad45ab4ca40945bbc3886b9e66
+guid: 57947b564f96b9b4982694ee5eda4c0f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: common enemy (satan)
+  - name: bossProjectile
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -126,9 +126,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 40
-      height: 27
-    spriteID: 2f9783abe2846ef4b9b7c1bf6ae36343
+      width: 16
+      height: 16
+    spriteID: 835745a8197194540a303091b1c33f97
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,20 +140,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1165354361
-    name: common enemy (satan)
+    guid: -2055932660
+    name: bossProjectile
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: common enemy (satan)
+    - name: bossProjectile
       frameIndex: 0
       cellRect:
-        x: 44
-        y: 1
-        width: 40
-        height: 27
-      spriteId: 2f9783abe2846ef4b9b7c1bf6ae36343
+        x: 56
+        y: 56
+        width: 16
+        height: 16
+      spriteId: 835745a8197194540a303091b1c33f97
     linkedCells: []
     parentIndex: -1
   platformSettings: []
